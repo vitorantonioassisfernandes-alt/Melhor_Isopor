@@ -1,0 +1,160 @@
+/* Importação de fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f9;
+}
+
+/* Cabeçalho (Header) */
+header {
+    background: linear-gradient(135deg, #003366 0%, #00509d 100%);
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 5px solid #ffcc00; /* Um detalhe em amarelo para destacar, opcional */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header h2 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #d1e3ff;
+}
+
+header p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Conteúdo Principal (Main) */
+main {
+    max-width: 1100px;
+    margin: -30px auto 40px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* Estilização dos Cards (divs id main1, main2, etc) */
+main div {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+main div:hover {
+    transform: translateY(-5px);
+}
+
+main h2 {
+    color: #003366;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    border-left: 5px solid #00509d;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #008000;
+    font-weight: bold;
+}
+
+/* Seção de Construção Civil (Destaque) */
+#main3 {
+    grid-column: span 1;
+    background-color: #eef2f7;
+}
+
+/* Banner de Entrega Rápida */
+#main4 {
+    grid-column: 1 / -1;
+    text-align: center;
+    background-color: #00509d;
+    color: white;
+}
+
+#main4 h2 {
+    color: white;
+    border: none;
+}
+
+/* Rodapé (Footer) */
+footer {
+    background-color: #002244;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#footer1 h2 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+#footer1 p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+}
+
+/* Botão WhatsApp */
+#footerLinkWhats a {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 18px 35px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#footerLinkWhats a:hover {
+    background-color: #128c7e;
+    transform: scale(1.05);
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    main { margin-top: 20px; }
+}
